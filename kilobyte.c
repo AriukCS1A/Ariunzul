@@ -6,5 +6,6 @@ int main (){
 	byte = kilobyte * 1024;
 	printf ("Byte is: ");
 	printf ("%f\n", byte);
+	printf ("\nFinished");
 	return 0;
 }

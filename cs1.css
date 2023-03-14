@@ -39,7 +39,7 @@ p {
 }
 .channel-picture{
   display: inline-block;
-  width: 50px;
+  width: 20px;
   vertical-align: top;
 }
 .video-info{
@@ -50,4 +50,14 @@ p {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   grid-column-gap: 10px;
+}
+.topic{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-column-gap: 10px;
+}
+.example{
+  font-size: 10 px;
+  display: inline-block;
+  border-radius: 4500px;
 }

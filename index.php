@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include "config.php"
+?>
+<!DOCTYPE html>     
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,18 +15,16 @@
 <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form method="post" action="">
 			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
 			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
+			<input type="text" placeholder="Name" name="uname" />
+			<input type="email" placeholder="Email" name="wawa" />
+			<input type="password" placeholder="Password"name="password" />
+            <div> 
+                <input type="submit" value="Sign Up"  name="but_submit">
+            </div>
+			<!--<button>Sign Up</button>-->
 		</form>
 	</div>
 	<div class="form-container sign-in-container">

@@ -1,7 +1,8 @@
 <?php
-include "config.php"
+include "config.php";
 ?>
-<!DOCTYPE html>     
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,26 +16,23 @@ include "config.php"
 <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form method="post" action="">
+		<form action="" method = "post">
 			<h1>Create Account</h1>
 			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" name="uname" />
-			<input type="email" placeholder="Email" name="wawa" />
-			<input type="password" placeholder="Password"name="password" />
-            <div> 
-                <input type="submit" value="Sign Up"  name="but_submit">
-            </div>
-			<!--<button>Sign Up</button>-->
+			<input type="text" placeholder="Name" name="uname"/>
+			<input type="password" placeholder="Password" name = "pass"/>
+			<input type = "submit" value = "Sign up" name = "reg_submit">
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="" method = "post">
 			<h1>Sign in</h1>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input type="text" placeholder="Username" name = "txt_name"/>
+			<input type="password" placeholder="Password" name = "txt_pass"/>
 			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<input type = "submit" value = "Sign in" name = "but_submit">
+	
 		</form>
 	</div>
 	<div class="overlay-container">

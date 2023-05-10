@@ -1,4 +1,5 @@
 <?php
+session_start ();
 $host = "localhost";
 $user = "root";
 $password = "";
@@ -33,7 +34,12 @@ if (isset($_POST ['but_submit'])){
         $result = mysqli_query ($con, $sql_query);
         $row = mysqli_fetch_array ($result);
         $count = $row ['u_id'];
+        $pmission = "SELECT u_id, permission FROM users WHERE name = '".$uname."' AND password ='".$password."'";
+        $pmresult = mysqli_query ($con, $pmission);
+        $pmrow = mysqli_fetch_array ($pmresult);
         if ($count > 0){
+            $_SESSION ['permission'] = $pmrow ['permission'];
+            $_SESSION ['uname'] = $uname;
             header ('Location: main.php');
         }else {
             echo "Invalid username and password";
